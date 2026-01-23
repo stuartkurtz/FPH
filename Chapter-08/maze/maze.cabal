@@ -1,0 +1,31 @@
+cabal-version:      3.0
+name:               maze
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Stuart A. Kurtz
+maintainer:         stuart@cs.uchicago.edu
+-- copyright:
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common standard
+    ghc-options:      -Wall
+    build-depends:    base, array, containers
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+executable solver
+  import:            standard
+  main-is:           Solver.hs
+
+executable frequencies
+  import:            standard
+  main-is:           Frequencies.hs
+
+executable histogram
+  import:            standard
+  main-is:           Histogram.hs

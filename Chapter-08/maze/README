@@ -1,0 +1,7 @@
+The file moby-dick.txt is good grist for testing the frequencies and histogram programs, e.g.,
+
+$ cabal run histogram < moby-dick.txt
+
+The file maze.txt is good grist for testing the solver, i.e.,
+
+$ cabal run solver < maze.txt
